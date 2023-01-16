@@ -1,0 +1,144 @@
+body{
+  background: linear-gradient(45deg, #0468f592, #6f5553);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*{
+  color: rgb(240, 248, 255,0.9);
+}
+.container-watch{
+  margin: 15px 0;
+  background-color: #232423;
+  border-radius: 5px;
+  padding: 60px 30px;
+  box-shadow: inset 1px 1px 10px rgba(255, 222, 173, 0.524);
+  display: flex;
+  align-items: center;
+}
+.timer-minuts{
+  width: 130px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.213);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.timer-hours{
+  width: 130px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.213);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.timer-sekund{
+  width: 130px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.213);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.timer-col{
+  margin-top: 0;
+  text-align: center;
+  min-width: 90px;
+  position: relative;
+}
+.timer-label{
+  color: rgb(240, 248, 255,0.9);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.title{
+  color: #708CBF
+}
+span{
+  color: #FFC107;
+}
+.btn{
+  margin: 10px;
+  width: 80%;
+}
+.interval{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+ overflow-y: scroll;
+ height: 200px;
+ background-color: rgba(15, 16, 16, 0.919);
+}
+.interval::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgba(232, 231, 231, 0.435);
+}
+.interval::-webkit-scrollbar-thumb{
+  background-color: rgb(24, 244, 8);
+  border-radius: 10px;
+}
+.interval p{
+  margin: 3px;
+  background-color: rgba(255, 255, 255, 0.201);
+  padding: 2px;
+  border-radius: 5px;
+font-size: 19px;
+font-weight: 600;
+width: 70%;
+text-align: center;
+color: #fff;
+}
+.res-container{
+  align-items: center;
+flex-direction: row;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.timer-col{
+  margin-top: 15px;
+}
+@media (max-width: 760px){
+  .container-watch{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .res-container{
+    align-items: center;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+  .timer-col{
+    margin-top: 15px;
+  }
+  .timer-hours{
+    margin-left: 10px;
+    width: 200px;
+  }
+  .timer-minuts{
+    width: 200px;
+  }
+  .timer-sekund{
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 420px){
+  .container-watch{
+    padding: 20px 10px;
+    margin: 20px 0;
+  }
+}
