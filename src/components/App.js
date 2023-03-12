@@ -43,7 +43,7 @@ class App extends React.Component {
           });
         }
       }
-    }, 1000);
+    }, 16.666667);
   this.setState({
     clearInterv:timer
   })
@@ -51,7 +51,7 @@ class App extends React.Component {
 
   intervalClick=()=>{
     const {hours, minut, second, intervalStorege}=this.state;
-    intervalStorege.push(`${hours} : ${minut} : ${second}`)
+    intervalStorege.push(`${hours}  : ${minut}  : ${second} `)
     this.setState({
       intervalStorege:intervalStorege
     })
@@ -77,17 +77,17 @@ class App extends React.Component {
           </h2>
           <div className="timer-col">
             <p className="timer-hours">{hours}</p>
-            <p className="timer-label">Hours</p>
+            <p className="timer-label">Minut</p>
           </div>
 
           <div className="timer-col">
             <p className="timer-minuts">{minut}</p>
-            <p className="timer-label">Minuts</p>
+            <p className="timer-label">Secund</p>
           </div>
 
           <div className="timer-col">
             <p className="timer-sekund">{second}</p>
-            <p className="timer-label">Secunds</p>
+            <p className="timer-label">Millisecund</p>
           </div>
         </div>
         <div className="container-watch res-container">
